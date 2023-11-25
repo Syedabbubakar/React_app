@@ -1,0 +1,13 @@
+.home-image{
+    background-image: url(../images/chicken.jpg);
+    height: 88.7vh;
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    height: 88.7vh;
+}

@@ -1,22 +1,40 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, NavLink, useLocation} from "react-router-dom";
+import logo from "../assets/images/logo1.png"
 
 const Header = () => {
+    const location = useLocation()
+
+const currentRoute = location.pathname
+
+const styleLink = ({isActive}) => {
+    return {
+        color: isActive ? "red" : ""
+    }
+}
+
   return (
     <div className="header-wrapper">
       <header>
         <div className="header-logo">
-          <span>LOGO</span>
+          <img className="img2" src={logo} alt="" />
         </div>
         <div className="header-menus">
-<Link></Link>
-          <Link to="/home" className="menu">Hone</Link>
-          <Link to="/product" className="menu">Product</Link>
-          <Link to="/about" className="menu">About us</Link>
+
+          <NavLink style={styleLink} to="/home" className="menu">Home</NavLink>
+          <NavLink style={({isActive})=>{
+            return isActive ? {backgroundColor:"red",color:"white"} : {}
+          }} to="/product" className="menu">Product</NavLink>
+          <NavLink style={({isActive})=>{
+            return isActive ? {backgroundColor:"red",color:"white"} : {}
+          }} to="/about" className="menu">About</NavLink>
 
         </div>
         <div className="header-auth">
-          <Link to="/login">Login/SignUp</Link>
+            {
+                currentRoute === "/home" || currentRoute === "/about" ? <Link to="/login">Login/SignUp</Link> : <></>
+            }
+          
         </div>
       </header>
     </div>

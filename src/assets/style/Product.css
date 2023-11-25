@@ -1,0 +1,15 @@
+.card-container{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    margin: 50px;
+}
+.product-image{
+    background-image: url(../images/biryani.jpg);
+    height: 80vh;
+    width: 50vw;
+    background-size: cover;
+}
+span{
+    font-size: 20px;
+    color: red;
+}
