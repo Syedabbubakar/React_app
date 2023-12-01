@@ -5,8 +5,11 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import AboutUs from "./pages/AboutUs";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Form, Route, Routes, useLocation } from "react-router-dom";
 import PageNotFound from "./pages/PageNotFound";
+import Effect from "./pages/Effect";
+import SignUp from "./pages/SignUp";
+import ApiFetch from "./pages/ApiFetch";
 
 function App() {
 
@@ -18,22 +21,24 @@ console.log(currentRoute);
 
   return (
     <div className="App">
-
+ 
 {
-  currentRoute 
+  currentRoute !== "/login" && currentRoute !== "/signup"  ?  <Header /> : <></>
 }
 
-      <Header />
+     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/product" element={<Product/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<SignUp/>} />
         <Route path="*" element={<PageNotFound/>} />
+        <Route path="/ApiFetch" element={<ApiFetch/>} />
       </Routes>
       
-      
+      {/* <Effect/> */}
       
       
     </div>

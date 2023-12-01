@@ -10,4 +10,16 @@
     color: white;
     text-align: center;
     height: 88.7vh;
+    padding: 150px;
+}
+
+@font-face {
+    font-family: ephesis;
+    src: url(../fonts/Ephesis-Regular.ttf);
+}
+
+.home-heading{
+    font-family: ephesis;
+    font-size: 150px ;
+    
 }

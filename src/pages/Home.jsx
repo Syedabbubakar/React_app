@@ -1,11 +1,12 @@
 import React from "react";
 import "../assets/style/Home.css";
+import UseRef from "./UseRef";
 
 const Home = () => {
   return (
     <div className="home-image">
       <div className="heading">
-        <h1>BIRYANI HOUSE</h1>
+        <h1 className="home-heading">Biyani House</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quam
         aut nesciunt dolores quo provident beatae porro incidunt quis
@@ -15,6 +16,7 @@ const Home = () => {
         quae qui ex culpa?
       </p>
       </div>
+      <UseRef/>
     </div>
   );
 };

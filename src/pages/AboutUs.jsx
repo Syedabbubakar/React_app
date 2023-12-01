@@ -1,9 +1,10 @@
 import React from 'react'
+import LocalStorage from './LocalStorage'
 
 const AboutUs = () => {
   return (
     <div>
-        <h1>About us Page</h1>
+        <LocalStorage/>
     </div>
   )
 }

@@ -1,0 +1,242 @@
+.background-container{
+    background-image: url(../images/peakpx.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  filter: blur(5px 10px);
+ 
+}
+
+.name-content {
+  margin-right: 7rem;
+}
+
+.logo2 {
+  width: 300px;
+  filter: drop-shadow(3px 5px 2px black);
+}
+.name-content p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+form input {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+input::placeholder{
+  color: black;
+}
+form input:focus {
+  border: 1.8px solid red;
+}
+
+form .login {
+  outline: none;
+  margin-top: 20px;
+  border: none;
+  background: rgb(249, 73, 73);
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+form .login:hover {
+  background: red;
+  cursor: pointer;
+}
+
+form a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  color: orange;
+}
+
+form a:hover{
+  text-decoration: underline;
+}
+
+form hr {
+  background: #f7f7f7;
+  margin: rem;
+}
+
+form .create-account {
+  outline: none;
+  border: none;
+  background: rgb(249, 73, 73);;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  color: #fff;
+  width: 75%;
+  margin: 0 auto;
+}
+
+form .create-account:hover {
+  background: red;
+  cursor: pointer;
+}
+
+/* //.........Media Query.........// */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+  .logo2 {
+    width: 100px;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form .login {
+    font-size: 1.5rem;
+  }
+
+  form a {
+    font-size: 1.5rem;
+  }
+
+  form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form .login {
+    font-size: 1.5rem;
+  }
+
+  form a {
+    font-size: 1.5rem;
+  }
+
+  form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form .login {
+    font-size: 1.5rem;
+  }
+
+  form a {
+    font-size: 1.5rem;
+  }
+
+  form .create-account {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    .header {
+      height: 90vmax;
+    }
+  }
+}

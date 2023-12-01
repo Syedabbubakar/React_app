@@ -5,6 +5,25 @@ import Card from 'react-bootstrap/Card';
 import biryani from "../assets/images/biryani.jpg"
 
 const Product = () => {
+
+  const data = new Promise((resolve, rejcet)=>{
+    let a=4;
+
+    if(a===6){
+      resolve("success")
+    }else{
+      rejcet("reject")
+    }
+  })
+
+  data.then((msg)=>{
+    console.log("success data",msg);
+  }).catch((err)=>{
+console.log("reject data", err);
+  })
+
+  console.log(data);
+
   return (
     <div className="card-container">
       <Card style={{ width: '18rem' }}>

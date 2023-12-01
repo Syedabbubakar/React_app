@@ -1,6 +1,6 @@
 import React from "react";
 import {Link, NavLink, useLocation} from "react-router-dom";
-import logo from "../assets/images/logo1.png"
+import logo from "../assets/images/logo1.png";
 
 const Header = () => {
     const location = useLocation()
@@ -9,7 +9,8 @@ const currentRoute = location.pathname
 
 const styleLink = ({isActive}) => {
     return {
-        color: isActive ? "red" : ""
+        color: isActive ? "white" : "",
+        backgroundColor: isActive ? "red" : ""
     }
 }
 
@@ -17,7 +18,7 @@ const styleLink = ({isActive}) => {
     <div className="header-wrapper">
       <header>
         <div className="header-logo">
-          <img className="img2" src={logo} alt="" />
+         <Link to="/home"><img className="img2" src={logo} alt="" /></Link>
         </div>
         <div className="header-menus">
 
@@ -31,10 +32,7 @@ const styleLink = ({isActive}) => {
 
         </div>
         <div className="header-auth">
-            {
-                currentRoute === "/home" || currentRoute === "/about" ? <Link to="/login">Login/SignUp</Link> : <></>
-            }
-          
+          <Link to="/login">Login/SignUp</Link>
         </div>
       </header>
     </div>
