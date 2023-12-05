@@ -31,7 +31,7 @@ console.log("reject data", err);
       <Card.Body>
         <Card.Title>Chicken Biryani</Card.Title>
         <Card.Text>
-            <span><del>₹200</del><b> ₹120</b></span><p>40% off</p>
+            <span className="price"><del>₹200</del><b> ₹120</b></span><p>40% off</p>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>

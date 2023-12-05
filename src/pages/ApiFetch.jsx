@@ -41,7 +41,7 @@ console.log("ERROR=>", err);
 
   console.log("DATA=>", data);
   return (
-    <div className="container">
+    <div className="container mt-4">
       <h1>Posts Data</h1>
       <hr />
       <div>

@@ -10,6 +10,8 @@ import PageNotFound from "./pages/PageNotFound";
 import Effect from "./pages/Effect";
 import SignUp from "./pages/SignUp";
 import ApiFetch from "./pages/ApiFetch";
+import ApiFetchWithAxios from "./pages/ApiFetchWithAxios";
+import ApiPost from "./pages/ApiPost";
 
 function App() {
 
@@ -36,6 +38,8 @@ console.log(currentRoute);
         <Route path="/signup" element={<SignUp/>} />
         <Route path="*" element={<PageNotFound/>} />
         <Route path="/ApiFetch" element={<ApiFetch/>} />
+        <Route path="/apipost" element={<ApiPost/>} />
+        <Route path="/apifetchaxios" element={<ApiFetchWithAxios/>} />
       </Routes>
       
       {/* <Effect/> */}
